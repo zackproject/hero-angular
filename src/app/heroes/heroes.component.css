@@ -1,0 +1,38 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.selected {
+    background-color: black;
+    color: white;
+
+}
+
+button {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 18px;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+li {
+    margin: 10px;
+}
+
+.badge {
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+    padding: 5px;
+    background-color: #405061;
+    line-height: 1em;
+    font-size: 18px;
+}
