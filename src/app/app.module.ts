@@ -7,14 +7,14 @@ import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
   declarations: [
-  
-    HeroesComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     //standalone
-    AppComponent
+    AppComponent,
+    HeroesComponent
 
   ],
   providers: [],
