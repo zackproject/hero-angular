@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { Hero } from '../hero';
 import { HEROES } from '../mock-heroes';
+import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 
 @Component({
   standalone: true,
@@ -13,7 +14,8 @@ import { HEROES } from '../mock-heroes';
   imports: [
     FormsModule,
     //ngIf, ngFor, uppercase
-    CommonModule
+    CommonModule,
+    HeroDetailComponent
   ],
 })
 
