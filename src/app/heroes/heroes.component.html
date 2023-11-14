@@ -5,3 +5,11 @@
     <p>Id: {{hero.id}}</p>
     <p>Name: {{hero.name}}</p>
 </article>
+
+<article>
+    <h3>Edit</h3>
+    <div>
+        <label for="name">Hero name: </label>
+        <input id="name" [(ngModel)]="hero.name" placeholder="name">
+      </div>
+</article>
