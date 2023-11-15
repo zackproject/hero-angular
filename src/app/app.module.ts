@@ -16,15 +16,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    //form-input
     CommonModule,
-    FormsModule,
-  ],
+    //form-input
+    FormsModule,],
   providers: [],
   bootstrap: [AppComponent]
 })

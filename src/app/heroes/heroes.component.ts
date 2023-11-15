@@ -12,14 +12,12 @@ import { MessageService } from '../message.service';
 })
 
 
-export class HeroesComponent {
+export class HeroesComponent /*implements OnInit*/{
   //vendra de hero.service.ts
   heroes: Hero[] = [];
   selectedHero?: Hero;
 
   constructor(private heroService: HeroService) {
-    //observable data
-    //this.heroes = this.heroService.getHeroes();
   }
 
   //hacia como un fetch
@@ -37,9 +35,6 @@ export class HeroesComponent {
       .subscribe(heroes => this.heroes = heroes);
   }
 
-  onSelect(hero: Hero): void {
-    // Asigna el héroe seleccionado al atributo 'selectedHero'
-    this.selectedHero = hero;
-  }
+
 
 }
