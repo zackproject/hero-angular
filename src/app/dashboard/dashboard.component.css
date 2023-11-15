@@ -1,0 +1,32 @@
+h2 {
+    text-align: center;
+}
+
+.heroes-menu {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+}
+
+a {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    transition: all 0.5s;
+    border: 1px solid black;
+    text-align: center;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .heroes-menu {
+        flex-direction: column;
+    }
+}
