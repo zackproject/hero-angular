@@ -3,17 +3,22 @@ import { Observable, of } from 'rxjs';
 import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
 
+//IMPORTA LOS MENSAJE 
+import { MessageService } from './message.service';
+
 @Injectable({
   providedIn: 'root'
 })
 
 export class HeroService {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
+
   //Lista los heroes ahora viene de el service
   getHeroes(): Observable<Hero[]> {
     const heroes = of(HEROES);
+    this.messageService.add('HeroService: fetched heroes');
     return heroes;
   }
-  
+
 }

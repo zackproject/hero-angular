@@ -4,12 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  standalone: true,
+  //standalone: true,
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
-  imports: [FormsModule,
-    //ngIf, ngFor, uppercase
-    CommonModule],
+  //imports: [FormsModule,//ngIf, ngFor, uppercas  CommonModule],
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent {
